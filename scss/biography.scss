@@ -1,0 +1,33 @@
+/*Biography*/
+.biography { 
+    color: $colorWhite; 
+    background-color: $colorblue; 
+    
+    h2 { color: $colorWhite; }
+
+    div {
+        margin: auto;
+        display: flex;
+        max-width: 800px;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around; 
+        
+        .perfilPhoto { 
+            width: 200px;
+            padding: 5px;
+            border-radius: 50%;
+            border: solid 5px $colorWhite;
+            
+            &:hover { 
+                transition: 1s;
+                transform: rotate(-360deg) scale(1.2, 1.2);
+            }
+        }
+
+        p { 
+            margin-left: 5vw;
+            max-width: 600px; 
+        }
+    }
+}

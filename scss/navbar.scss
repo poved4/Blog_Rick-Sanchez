@@ -1,0 +1,46 @@
+nav {
+    top: 0;
+    z-index: 100;
+    position: sticky;
+    padding: 10px 0px;
+    box-shadow: $shadowNavbar;
+    background-color: $colorWhite;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    .logo {
+        width: 30px;
+        cursor: pointer;
+        
+        &:hover{ 
+            transition: .2s;
+            transform: scale(1.5, 1.5);
+        }
+    }
+    
+
+    ul {
+        list-style: none;
+        
+        li { 
+            padding: 5px 20px;
+            display: inline-block;
+            
+            &:hover a {
+                color: $colorblue;
+                text-decoration: line-through;
+            }
+            
+            a {
+                transition: .3s;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-decoration: none;
+                color: $colorgreen;
+                text-transform: lowercase ;
+            } 
+        }
+    } 
+}

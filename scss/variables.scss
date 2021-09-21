@@ -1,0 +1,23 @@
+@font-face {
+    font-family: get-schwifty;
+    src: url('../public/get_schwifty.ttf');
+}
+
+/*Colors*/
+$colorDark: #020c18;
+$colorBrown: #756750;
+$colorgreen: #bdfc00;
+$colorblue: #b0e6e5;
+$colorWhite: #fff;
+
+/*Fonts*/
+$fontT: 'get-schwifty', 'poppins';
+$fontP: 'poppins', sans-serif;
+
+/*Parallax*/
+$parallaxFilter: rgba(0, 0, 0, .5);
+$wallpaperParallax: url("https://www.latercera.com/resizer/BaNHXVW24tLkG2DTrioBtuWyCxA=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/WPNKFC3FPBBJ3NJK5PINB2XPUM.png");
+
+/*Section*/
+$shadowBox13: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+$shadowNavbar: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;

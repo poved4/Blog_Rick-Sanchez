@@ -1,0 +1,11 @@
+.parallax {
+    min-height: 100vh;
+    background: $parallaxFilter $wallpaperParallax;
+
+    /* Create the parallax scrolling effect */;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: $fontP;
+}
+
+section {
+    z-index: 0;
+    padding: 6vw;
+    margin: 10vh 0;
+}
+
+/*      --TEXT--    */
+h1, h2 { color: $colorgreen; }
+
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: $fontT;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: normal;
+}
+
+header h2  { font-size: 1.2em; }
+
+
+/*      --VIDEO--    */
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.video {
+    display: flex;
+    margin: 5vw 0px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: var(--shadowBox13);
+}
+
+/*      --FOOTER--    */
+footer {
+    margin: auto;
+    padding: 20px 0px;
+    font-weight: bold;
+    color: $colorDark;
+    width: calc(100% - 50px);
+    border-radius: 25px 25px 0 0;
+    background-color: $colorblue;
+}
+
+/*      --MY CLASSES--    */
+.centerText { text-align: center; }
+
+.fontTitle { font-family: $fontT; }
+
+.centered{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+/*      --ANIMATIONS--    */
+.animationText {
+    animation: scaleText 2s linear 2s infinite alternate;
+}
+
+@keyframes scaleText {
+    from { transform: scale(1.2, 1.2); }
+    to { transform: scale(1, 1); }
+}
+
+
+/*      --MEDIA QUERIES--    */
+@media only screen and (max-width: 768px){
+    h1 { font-size: 3em; }
+
+    .biography div {
+        flex-direction: column;
+    }
+
+    .perfilPhoto {
+        margin-bottom: 5vw;
+    }
+    
+    .formDesign {
+        flex-direction: column;
+    } 
+    
+    input {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    nav { flex-direction: column; }
+
+    .gallery{ flex-direction: column; }
+    .gallery__column { width: 100%; }
+
+    iframe {
+        width: 70VW;
+        height: 40vh;
+    }
+}
